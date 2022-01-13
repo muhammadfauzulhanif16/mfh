@@ -35,15 +35,13 @@ export const About = () => {
           </Box>
         </GridItem>
 
-        <GridItem
-          colSpan={2}
-          d="flex"
-          justifyContent="center"
-          // alignItems="center"
-          mb={32}
-          h="100%"
-        >
-          <Image src="./img/profile.png" pos="absolute" height="43%" />
+        <GridItem colSpan={2} d="flex" justifyContent="center" mb={32} h="100%">
+          <Image
+            src="./img/profile.png"
+            pos="absolute"
+            height="43%"
+            alt="Muhammad Fauzul Hanif"
+          />
         </GridItem>
 
         <GridItem
