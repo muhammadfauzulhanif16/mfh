@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <Box bgColor="gray.50">
       <head>
-        <title>Muhammad Fauzul Hanif's Website</title>
+        <title>Muhammad Fauzul Hanif</title>
       </head>
 
       <NavBar />
