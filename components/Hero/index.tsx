@@ -2,16 +2,17 @@ import { Center, Heading, Text, VStack } from "@chakra-ui/react";
 
 export const Hero = () => {
   return (
-    <Center
-      mx={[2, 6, 10]}
-      bgColor="gray.100"
-      height="50vh"
-      borderRadius={16}
-      mb={[2, 6, 10]}
-    >
+    <Center mx={[2, 6, 10]} pb={32} pt={20} fontFamily="Roboto Slab">
       <VStack>
-        <Heading>Welcome to My Website</Heading>
-        <Heading size="md">Muhammad Fauzul Hanif</Heading>
+        <Text fontSize={["3xl", "4xl", "5xl", "6xl"]} align={"center"}>
+          Muhammad Fauzul Hanif
+        </Text>
+        <Text fontSize={["3xl", "4xl", "5xl", "6xl"]} align={"center"}>
+          Front-End Web Developer
+        </Text>
+        <Text fontSize={["3xl", "4xl", "5xl", "6xl"]} align={"center"}>
+          Based in Indonesia
+        </Text>
       </VStack>
     </Center>
   );

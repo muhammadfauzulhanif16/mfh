@@ -10,37 +10,43 @@ import {
   MenuItem,
   VStack,
   Icon,
+  Grid,
+  Link,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { Facebook } from "@styled-icons/boxicons-logos";
+import { IconList } from "./iconList";
 import { NavList } from "./NavList";
 
 export const NavBar = () => {
   return (
-    <HStack
+    <Grid
+      templateColumns="repeat(3, 1fr)"
       zIndex={1}
-      py={4}
-      justify="space-between"
       px={[2, 6, 10]}
+      py={12}
+      justify="space-between"
       pos="sticky"
       top={0}
-      // bgColor="gray.200"
+      bgColor="gray.50"
     >
       <HStack>
-        <Button
-          p={0}
-          bgColor="white"
-          _hover={{ color: "white", bgColor: "blue.500" }}
-        >
-          <Icon as={Facebook} w={6} h={6} />
-        </Button>
-        {/*<IconButton*/}
-        {/*  aria-label="Search database"*/}
-        {/*  icon={<box-icon type="logo" name="meta"  />}*/}
-        {/*/>*/}
+        {IconList.map(({ name, href }, id) => (
+          <NextLink href={href} key={id} passHref>
+            <Link isExternal>
+              <Button
+                p={0}
+                bgColor="gray.50"
+                _hover={{ color: "gray.50", bgColor: "gray.900" }}
+                _focus={{ boxShadow: "none" }}
+              >
+                <Icon as={name} w={6} h={6} />
+              </Button>
+            </Link>
+          </NextLink>
+        ))}
       </HStack>
 
-      <HStack>
+      <HStack justify="center">
         <NextLink href="/">
           <Heading fontSize="xl" fontWeight="medium" cursor="pointer">
             Fauzul
@@ -48,7 +54,7 @@ export const NavBar = () => {
         </NextLink>
       </HStack>
 
-      <HStack>
+      <HStack justify="end">
         <HStack
           spacing={1}
           mr={1}
@@ -95,6 +101,6 @@ export const NavBar = () => {
           </Menu>
         </VStack>
       </HStack>
-    </HStack>
+    </Grid>
   );
 };
