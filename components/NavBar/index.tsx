@@ -9,8 +9,10 @@ import {
   MenuList,
   MenuItem,
   VStack,
+  Icon,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Facebook } from "@styled-icons/boxicons-logos";
 import { NavList } from "./NavList";
 
 export const NavBar = () => {
@@ -22,8 +24,22 @@ export const NavBar = () => {
       px={[2, 6, 10]}
       pos="sticky"
       top={0}
-      bgColor="white"
+      // bgColor="gray.200"
     >
+      <HStack>
+        <Button
+          p={0}
+          bgColor="white"
+          _hover={{ color: "white", bgColor: "blue.500" }}
+        >
+          <Icon as={Facebook} w={6} h={6} />
+        </Button>
+        {/*<IconButton*/}
+        {/*  aria-label="Search database"*/}
+        {/*  icon={<box-icon type="logo" name="meta"  />}*/}
+        {/*/>*/}
+      </HStack>
+
       <HStack>
         <NextLink href="/">
           <Heading fontSize="xl" fontWeight="medium" cursor="pointer">

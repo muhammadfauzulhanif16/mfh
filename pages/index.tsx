@@ -9,6 +9,10 @@ import { Footer } from "../components/Footer";
 const Home: NextPage = () => {
   return (
     <>
+      <head>
+        <title>Muhammad Fauzul Hanif's Website</title>
+      </head>
+
       <NavBar />
       <Hero />
       <About />
