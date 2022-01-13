@@ -13,7 +13,7 @@ import {
   Grid,
   Link,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Menu as MenuIcon, X as XIcon } from "@styled-icons/boxicons-regular";
 import { IconList } from "./iconList";
 import { NavList } from "./NavList";
 
@@ -84,7 +84,7 @@ export const NavBar = () => {
                   as={Button}
                   _focus={{ boxShadow: "none" }}
                 >
-                  {isOpen ? <CloseIcon /> : <HamburgerIcon />}
+                  {isOpen ? <XIcon /> : <MenuIcon />}
                 </MenuButton>
 
                 <MenuList>

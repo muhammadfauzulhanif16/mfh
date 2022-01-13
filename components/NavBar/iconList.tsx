@@ -3,7 +3,6 @@ import {
   Instagram,
   Github,
   Linkedin,
-  Whatsapp,
 } from "@styled-icons/boxicons-logos";
 
 export const IconList = [
