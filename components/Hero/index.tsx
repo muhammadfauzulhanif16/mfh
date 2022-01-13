@@ -1,4 +1,4 @@
-import { Center, Heading, Text, VStack } from "@chakra-ui/react";
+import { Center, Text, VStack } from "@chakra-ui/react";
 
 export const Hero = () => {
   return (

@@ -1,12 +1,4 @@
-import {
-  Box,
-  Center,
-  Flex,
-  Heading,
-  Image,
-  Text,
-  Divider,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Divider } from "@chakra-ui/react";
 
 export const About = () => {
   return (
