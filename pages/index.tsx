@@ -4,20 +4,19 @@ import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { Portfolio } from "../components/Portfolio";
 import { Footer } from "../components/Footer";
-// import { Certificate } from "../components/Certificate";
+// import { Box } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
     <>
-      <head>
-        <title>Muhammad Fauzul Hanif's Website</title>
-      </head>
+      {/*<head>*/}
+      {/*  <title>Muhammad Fauzul Hanif's Website</title>*/}
+      {/*</head>*/}
 
       <NavBar />
       <Hero />
       <About />
       <Portfolio />
-      {/*<Certificate />*/}
       <Footer />
     </>
   );
