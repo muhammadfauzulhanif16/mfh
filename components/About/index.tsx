@@ -1,13 +1,4 @@
-// import Image from "next/image";
-import {
-  Box,
-  Grid,
-  // Heading,
-  GridItem,
-  // VStack,
-  Text,
-  Image,
-} from "@chakra-ui/react";
+import { Box, Grid, GridItem, Text, Image } from "@chakra-ui/react";
 
 export const About = () => {
   const nowTime = new Date(),
