@@ -5,10 +5,11 @@ import { About } from "../components/About";
 import { Portfolio } from "../components/Portfolio";
 import { Footer } from "../components/Footer";
 // import { Certificate } from "../components/Certificate";
+import { Box } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <Box bgColor="gray.50">
       <head>
         <title>Muhammad Fauzul Hanif's Website</title>
       </head>
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
       <Portfolio />
       {/*<Certificate />*/}
       <Footer />
-    </>
+    </Box>
   );
 };
 
