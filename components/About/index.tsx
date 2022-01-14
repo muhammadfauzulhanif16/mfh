@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, Text, Image } from "@chakra-ui/react";
+import { Box, Text, Image, SimpleGrid } from "@chakra-ui/react";
 
 export const About = () => {
   const nowTime = new Date(),
@@ -6,8 +6,16 @@ export const About = () => {
 
   return (
     <Box mx={[2, 6, 10]} mb={[2, 6, 10]}>
-      <Grid templateColumns="repeat(4, 1fr)" h={475}>
-        <GridItem d="flex" flexDirection="column" justifyContent="space-evenly">
+      <Box grow={1} bgColor="red.200" d={{ base: "block", md: "none" }}>
+        <Image
+          src="./img/profile.png"
+          height="43%"
+          alt="Muhammad Fauzul Hanif"
+        />
+      </Box>
+
+      <SimpleGrid columns={{ base: 2, md: 3 }} h={475}>
+        <Box grow={1} bgColor="red.100">
           <Box>
             <Text color="gray.500" fontSize="xs" mb={6} fontWeight={600}>
               BIOGRAPHY
@@ -33,23 +41,17 @@ export const About = () => {
               <Text>+62 851 5885 1642</Text>
             </Text>
           </Box>
-        </GridItem>
+        </Box>
 
-        <GridItem colSpan={2} d="flex" justifyContent="center" mb={32} h="100%">
+        <Box grow={1} bgColor="red.200" d={{ base: "none", md: "block" }}>
           <Image
             src="./img/profile.png"
-            pos="absolute"
             height="43%"
             alt="Muhammad Fauzul Hanif"
           />
-        </GridItem>
+        </Box>
 
-        <GridItem
-          colSpan={1}
-          d="flex"
-          flexDirection="column"
-          justifyContent="space-evenly"
-        >
+        <Box grow={1} bgColor="red.300">
           <Box>
             <Text
               color="gray.500"
@@ -88,8 +90,8 @@ export const About = () => {
               2
             </Text>
           </Box>
-        </GridItem>
-      </Grid>
+        </Box>
+      </SimpleGrid>
     </Box>
   );
 };
